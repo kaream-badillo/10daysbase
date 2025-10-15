@@ -65,8 +65,13 @@ Add your credentials:
 ```bash
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
 PRIVATE_KEY=your_private_key_without_0x
+
+# You can use both variable names (same value)
 ETHERSCAN_API_KEY=your_basescan_api_key
+BASESCAN_API_KEY=your_basescan_api_key
 ```
+
+📖 **For day-specific variables, see [ENV_VARIABLES_GUIDE.md](./ENV_VARIABLES_GUIDE.md)**
 
 ### 4. Navigate to specific day
 ```bash

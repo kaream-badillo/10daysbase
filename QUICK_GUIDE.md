@@ -27,8 +27,11 @@ npx hardhat compile
 # Deploy to Base Sepolia
 npx hardhat run scripts/deploy-with-checks.js --network baseSepolia
 
-# Open frontend
-# Open day1/frontend/index.html in your browser
+# Interact via Hardhat console
+npx hardhat console --network baseSepolia
+
+# Or verify and interact via BaseScan
+# Visit: https://sepolia.basescan.org/address/YOUR_CONTRACT_ADDRESS
 ```
 
 ### Day 2 (Frontend OnchainKit)
@@ -74,13 +77,16 @@ ETHERSCAN_API_KEY=your_basescan_api_key
 
 ```
 10DaysofBase/
-├── .env           ← HERE
+├── .env           ← Shared variables HERE
 ├── day1/
 ├── day2/
+│   └── .env.local ← Day-specific variables (optional)
 └── ...
 ```
 
 Each `hardhat.config.js` is configured to read variables from `../.env`.
+
+📖 **See [ENV_VARIABLES_GUIDE.md](./ENV_VARIABLES_GUIDE.md) for detailed environment variables setup**
 
 ---
 
@@ -96,10 +102,12 @@ Each `hardhat.config.js` is configured to read variables from `../.env`.
 ## ✅ Checklist by Day
 
 ### Day 1
+- [x] Understand what is Base (OP Stack)
+- [x] Set up Hardhat environment
 - [x] Compile Greeter contract
 - [x] Deploy to Base Sepolia
-- [x] Verify on BaseScan
-- [x] Interact via frontend
+- [x] Explore and verify on BaseScan
+- [x] Interact via Hardhat console or BaseScan
 
 ### Day 2
 - [ ] Scaffold with create-onchain
