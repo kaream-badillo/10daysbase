@@ -1,195 +1,132 @@
-# 🚀 Base Greeter Smart Contract
+# 🚀 10 Days of Base - Learning Journey
 
-A simple Greeter smart contract deployed on Base Sepolia testnet, built with Hardhat as part of the "10 Days of Base" learning journey.
+Repositorio del desafío **"10 Days of Base"** - aprendiendo a construir en Base blockchain a través de proyectos prácticos diarios.
 
-## 🏗️ Project Overview
+---
 
-This project demonstrates the complete workflow of smart contract development on Base blockchain, from setup to deployment and frontend integration.
+## 📅 Progreso del Desafío
 
-### 🎯 What's Included
+| Día | Módulo | Estado | Link |
+|-----|--------|--------|------|
+| **1** | Welcome to Base + First Smart Contract | ✅ Completado | [Ver Día 1](./dia1/) |
+| **2** | Frontend with OnchainKit | 🔄 En progreso | [Ver Día 2](./dia2/) |
+| 3 | TBD | ⏳ Pendiente | - |
+| 4 | TBD | ⏳ Pendiente | - |
+| 5 | TBD | ⏳ Pendiente | - |
+| 6 | TBD | ⏳ Pendiente | - |
+| 7 | TBD | ⏳ Pendiente | - |
+| 8 | TBD | ⏳ Pendiente | - |
+| 9 | TBD | ⏳ Pendiente | - |
+| 10 | TBD | ⏳ Pendiente | - |
 
-- ✅ **Smart Contract**: Simple Greeter contract with customizable messages
-- ✅ **Deployment Scripts**: Automated deployment with configuration validation  
-- ✅ **Frontend DApp**: Web interface to interact with the deployed contract
-- ✅ **Base Sepolia Integration**: Live deployment on Base testnet
-- ✅ **Comprehensive Documentation**: Step-by-step guides and examples
+---
 
-## 📍 Live Deployment
+## 🎯 Objetivos Generales
 
-- **Contract Address**: `0x4BAaE27A22562F3568d1edEf4eb0f3dA02f679b8`
-- **Network**: Base Sepolia (Chain ID: 84532)
-- **Explorer**: [View on BaseScan](https://sepolia.basescan.org/address/0x4BAaE27A22562F3568d1edEf4eb0f3dA02f679b8)
+- Dominar el desarrollo en Base blockchain
+- Desplegar y verificar smart contracts en testnet/mainnet
+- Construir frontends con OnchainKit y herramientas de Base
+- Integrar wallets, identidad onchain y transacciones
+- Aplicar buenas prácticas de desarrollo Web3
 
-## 🛠️ Technology Stack
+---
+
+## 🛠️ Stack Tecnológico
 
 - **Blockchain**: Base (OP Stack)
-- **Smart Contracts**: Solidity 0.8.0
-- **Development Framework**: Hardhat
-- **Frontend**: HTML/JavaScript with Ethers.js
-- **Testing Network**: Base Sepolia
+- **Smart Contracts**: Solidity
+- **Frameworks**: Hardhat, OnchainKit
+- **Frontend**: React, Next.js, HTML/JS
+- **Libraries**: Ethers.js, Wagmi, Viem
+- **Tools**: MetaMask, BaseScan
 
-## 📁 Project Structure
+---
 
-```
-10DaysofBase/
-├── contracts/          # Smart contracts
-│   └── Greeting.sol    # Main Greeter contract
-├── scripts/           # Deployment & interaction scripts
-│   ├── deploy-with-checks.js
-│   ├── verify-deployment.js
-│   └── check-contract.js
-├── frontend/          # Web DApp interface
-│   └── index.html     # Frontend application
-├── hardhat.config.js  # Hardhat configuration
-├── package.json       # Node.js dependencies
-├── .env.example       # Environment variables template
-└── DEPLOY_INSTRUCTIONS.md # Detailed deployment guide
+## 🚀 Setup Inicial
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/kaream-badillo/10daysbase.git
+cd 10daysbase
 ```
 
-## 🚀 Quick Start
+### 2. Instalar dependencias globales
+```bash
+npm install
+```
 
-### Prerequisites
+### 3. Configurar variables de entorno
+```bash
+# Crear archivo .env en la raíz
+cp .env.example .env
+```
 
-- Node.js (v16 or later)
-- MetaMask wallet
-- Base Sepolia ETH ([Get from faucet](https://docs.base.org/tools/network-faucets))
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/kaream-badillo/10daysbase.git
-   cd 10daysbase
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your credentials
-   ```
-
-4. **Compile contracts**
-   ```bash
-   npx hardhat compile
-   ```
-
-## 🔧 Environment Setup
-
-Create a `.env` file with the following variables:
-
+Agregar tus credenciales:
 ```bash
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
-PRIVATE_KEY=your_private_key_without_0x
-ETHERSCAN_API_KEY=your_basescan_api_key
+PRIVATE_KEY=tu_private_key_sin_0x
+ETHERSCAN_API_KEY=tu_basescan_api_key
 ```
 
-### Getting Required Keys
-
-- **Private Key**: Export from MetaMask (Settings > Security & Privacy)
-- **BaseScan API Key**: Create account at [BaseScan](https://basescan.org/apis)
-- **Base Sepolia ETH**: Use [Base faucets](https://docs.base.org/tools/network-faucets)
-
-## 🚀 Deployment
-
-### Deploy to Base Sepolia
-
+### 4. Navegar al día específico
 ```bash
-npx hardhat run scripts/deploy-with-checks.js --network baseSepolia
+cd dia1  # o dia2, dia3, etc.
 ```
 
-### Verify Contract (Optional)
+---
 
-```bash
-npx hardhat verify --network baseSepolia [CONTRACT_ADDRESS] "Hello Base Builders"
+## 📁 Estructura del Proyecto
+
+```
+10daysbase/
+├── dia1/              # Día 1: First Smart Contract
+├── dia2/              # Día 2: Frontend with OnchainKit
+├── dia3/              # Día 3: TBD
+├── ...
+├── package.json       # Dependencias compartidas
+├── .env               # Variables de entorno (no commitear)
+└── README.md          # Este archivo
 ```
 
-## 🌐 Frontend Usage
+Cada carpeta `diaX/` contiene su propio README con instrucciones específicas del módulo.
 
-1. **Open the DApp**
-   ```bash
-   # Open frontend/index.html in your browser
-   ```
+---
 
-2. **Connect MetaMask**
-   - The app will automatically configure Base Sepolia network
-   - Ensure you have test ETH in your wallet
+## 🌐 Recursos de Base
 
-3. **Interact with Contract**
-   - Read current greeting message
-   - Set new greeting messages
-   - View transactions on BaseScan
+- **Documentación oficial**: [docs.base.org](https://docs.base.org/)
+- **Faucets (testnet ETH)**: [Base Faucets](https://docs.base.org/tools/network-faucets)
+- **BaseScan Explorer**: [sepolia.basescan.org](https://sepolia.basescan.org/)
+- **Discord Community**: [discord.gg/buildonbase](https://discord.gg/buildonbase)
+- **OnchainKit**: [onchainkit.xyz](https://onchainkit.xyz/)
 
-## 📖 Contract Interface
+---
 
-### Functions
+## 📊 Redes de Base
 
-- `greeting()`: Returns the current greeting message (view function)
-- `setGreeting(string memory _newGreeting)`: Updates the greeting message
+### Base Sepolia (Testnet)
+- **Chain ID**: 84532
+- **RPC URL**: `https://sepolia.base.org`
+- **Explorer**: https://sepolia.basescan.org/
+- **Faucet**: Usar faucets oficiales de Base
 
-### Events
+### Base Mainnet
+- **Chain ID**: 8453
+- **RPC URL**: `https://mainnet.base.org`
+- **Explorer**: https://basescan.org/
 
-The contract emits standard transaction events that can be monitored on BaseScan.
+---
 
-## 🧪 Testing & Interaction
-
-### Using Hardhat Console
-
-```bash
-npx hardhat console --network baseSepolia
-```
-
-```javascript
-const Greeter = await ethers.getContractFactory("Greeter");
-const greeter = Greeter.attach("0x4BAaE27A22562F3568d1edEf4eb0f3dA02f679b8");
-
-// Read current greeting
-await greeter.greeting();
-
-// Set new greeting
-await greeter.setGreeting("Hello from Hardhat!");
-```
-
-## 📚 Learning Resources
-
-This project is part of the **"10 Days of Base"** learning curriculum:
-
-- ✅ **Module 1**: Welcome to Base + First Smart Contract
-- 🔄 **Next**: More advanced Base development topics
-
-### Key Concepts Covered
-
-- Base blockchain fundamentals (OP Stack)
-- Hardhat development environment
-- Smart contract deployment on testnet
-- Frontend integration with MetaMask
-- BaseScan explorer usage
-- Environment configuration & security
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues, fork the repository, and create pull requests.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🔗 Useful Links
-
-- [Base Documentation](https://docs.base.org/)
-- [Hardhat Documentation](https://hardhat.org/docs)
-- [Base Sepolia Faucets](https://docs.base.org/tools/network-faucets)
-- [BaseScan Explorer](https://sepolia.basescan.org/)
-- [Base Discord Community](https://discord.gg/buildonbase)
-
-## 👨‍💻 Author
+## 👨‍💻 Autor
 
 **Kaream Badillo** - [kaream.badillo@usach.cl](mailto:kaream.badillo@usach.cl)
 
 ---
 
-*Built with ❤️ on Base blockchain*
+## 📄 Licencia
+
+MIT License - ver el archivo LICENSE para detalles.
+
+---
+
+*Building on Base, one day at a time* 🔵⛓️
