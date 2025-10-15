@@ -1,37 +1,37 @@
 # 🚀 10 Days of Base - Learning Journey
 
-Repositorio del desafío **"10 Days of Base"** - aprendiendo a construir en Base blockchain a través de proyectos prácticos diarios.
+Repository for the **"10 Days of Base"** challenge - learning to build on Base blockchain through daily practical projects.
 
 ---
 
-## 📅 Progreso del Desafío
+## 📅 Challenge Progress
 
-| Día | Módulo | Estado | Link |
+| Day | Module | Status | Link |
 |-----|--------|--------|------|
-| **1** | Welcome to Base + First Smart Contract | ✅ Completado | [Ver Día 1](./dia1/) |
-| **2** | Frontend with OnchainKit | 🔄 En progreso | [Ver Día 2](./dia2/) |
-| 3 | TBD | ⏳ Pendiente | - |
-| 4 | TBD | ⏳ Pendiente | - |
-| 5 | TBD | ⏳ Pendiente | - |
-| 6 | TBD | ⏳ Pendiente | - |
-| 7 | TBD | ⏳ Pendiente | - |
-| 8 | TBD | ⏳ Pendiente | - |
-| 9 | TBD | ⏳ Pendiente | - |
-| 10 | TBD | ⏳ Pendiente | - |
+| **1** | Welcome to Base + First Smart Contract | ✅ Completed | [View Day 1](./day1/) |
+| **2** | Frontend with OnchainKit | 🔄 In Progress | [View Day 2](./day2/) |
+| 3 | TBD | ⏳ Pending | - |
+| 4 | TBD | ⏳ Pending | - |
+| 5 | TBD | ⏳ Pending | - |
+| 6 | TBD | ⏳ Pending | - |
+| 7 | TBD | ⏳ Pending | - |
+| 8 | TBD | ⏳ Pending | - |
+| 9 | TBD | ⏳ Pending | - |
+| 10 | TBD | ⏳ Pending | - |
 
 ---
 
-## 🎯 Objetivos Generales
+## 🎯 General Objectives
 
-- Dominar el desarrollo en Base blockchain
-- Desplegar y verificar smart contracts en testnet/mainnet
-- Construir frontends con OnchainKit y herramientas de Base
-- Integrar wallets, identidad onchain y transacciones
-- Aplicar buenas prácticas de desarrollo Web3
+- Master Base blockchain development
+- Deploy and verify smart contracts on testnet/mainnet
+- Build frontends with OnchainKit and Base tools
+- Integrate wallets, onchain identity, and transactions
+- Apply Web3 development best practices
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
 - **Blockchain**: Base (OP Stack)
 - **Smart Contracts**: Solidity
@@ -42,59 +42,59 @@ Repositorio del desafío **"10 Days of Base"** - aprendiendo a construir en Base
 
 ---
 
-## 🚀 Setup Inicial
+## 🚀 Initial Setup
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 ```bash
 git clone https://github.com/kaream-badillo/10daysbase.git
 cd 10daysbase
 ```
 
-### 2. Instalar dependencias globales
+### 2. Install global dependencies
 ```bash
 npm install
 ```
 
-### 3. Configurar variables de entorno
+### 3. Configure environment variables
 ```bash
-# Crear archivo .env en la raíz
+# Create .env file in the root
 cp .env.example .env
 ```
 
-Agregar tus credenciales:
+Add your credentials:
 ```bash
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
-PRIVATE_KEY=tu_private_key_sin_0x
-ETHERSCAN_API_KEY=tu_basescan_api_key
+PRIVATE_KEY=your_private_key_without_0x
+ETHERSCAN_API_KEY=your_basescan_api_key
 ```
 
-### 4. Navegar al día específico
+### 4. Navigate to specific day
 ```bash
-cd dia1  # o dia2, dia3, etc.
+cd day1  # or day2, day3, etc.
 ```
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 10daysbase/
-├── dia1/              # Día 1: First Smart Contract
-├── dia2/              # Día 2: Frontend with OnchainKit
-├── dia3/              # Día 3: TBD
+├── day1/              # Day 1: First Smart Contract
+├── day2/              # Day 2: Frontend with OnchainKit
+├── day3/              # Day 3: TBD
 ├── ...
-├── package.json       # Dependencias compartidas
-├── .env               # Variables de entorno (no commitear)
-└── README.md          # Este archivo
+├── package.json       # Shared dependencies
+├── .env               # Environment variables (do not commit)
+└── README.md          # This file
 ```
 
-Cada carpeta `diaX/` contiene su propio README con instrucciones específicas del módulo.
+Each `dayX/` folder contains its own README with module-specific instructions.
 
 ---
 
-## 🌐 Recursos de Base
+## 🌐 Base Resources
 
-- **Documentación oficial**: [docs.base.org](https://docs.base.org/)
+- **Official Documentation**: [docs.base.org](https://docs.base.org/)
 - **Faucets (testnet ETH)**: [Base Faucets](https://docs.base.org/tools/network-faucets)
 - **BaseScan Explorer**: [sepolia.basescan.org](https://sepolia.basescan.org/)
 - **Discord Community**: [discord.gg/buildonbase](https://discord.gg/buildonbase)
@@ -102,13 +102,13 @@ Cada carpeta `diaX/` contiene su propio README con instrucciones específicas de
 
 ---
 
-## 📊 Redes de Base
+## 📊 Base Networks
 
 ### Base Sepolia (Testnet)
 - **Chain ID**: 84532
 - **RPC URL**: `https://sepolia.base.org`
 - **Explorer**: https://sepolia.basescan.org/
-- **Faucet**: Usar faucets oficiales de Base
+- **Faucet**: Use official Base faucets
 
 ### Base Mainnet
 - **Chain ID**: 8453
@@ -117,15 +117,15 @@ Cada carpeta `diaX/` contiene su propio README con instrucciones específicas de
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Kaream Badillo** - [kaream.badillo@usach.cl](mailto:kaream.badillo@usach.cl)
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-MIT License - ver el archivo LICENSE para detalles.
+MIT License - see LICENSE file for details.
 
 ---
 
