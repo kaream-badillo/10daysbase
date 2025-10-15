@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hardhat files
+cache/
+artifacts/
+
+# Environment files
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Foundry (si se usa en el futuro)
+lib/
+out/
+forge-std/
+
+# Temporary files
+*.tmp
+*.temp
