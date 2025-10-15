@@ -12,6 +12,7 @@ artifacts/
 .env.*.local
 .env.development
 .env.production
+ENV_VARIABLES_GUIDE.md
 
 # OS generated files
 .DS_Store
@@ -25,6 +26,7 @@ Thumbs.db
 # IDE files
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 
