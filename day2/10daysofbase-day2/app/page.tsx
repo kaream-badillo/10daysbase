@@ -1,10 +1,18 @@
 "use client";
+import {useState, useEffect} from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Wallet } from "@coinbase/onchainkit/wallet";
+import {useAccount, useBalance, useSignMenssage} from Wagmi;
+
 
 export default function Home() {
-  return (
+  const {adress, isConnected, chain}=useAccount();
+  const {data:balance}=useBalance({adress});
+  const {signMessage, data:signature, isPending: isSignPending}=useSignMessage();
+  
+  const isCorrectNetwork=chain?.id===84532;
+    return (
     <div className={styles.container}>
       <header className={styles.headerWrapper}>
         <Wallet />
