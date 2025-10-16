@@ -11,18 +11,17 @@ const queryClient = new QueryClient();
 
 export function RootProvider({ children }: { children: ReactNode }) {
   return (
-    <WagmiProvider config={wagmiconfig}>
+    <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <OnchainKitProvider
-          apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}
+          apiKey={process.env.NEXT_PUBLIC_CDP_API_KEY}
           chain={baseSepolia}
           config={{
             appearance: {
               mode: "auto",
             },
             wallet: {
-              display: "modal",
-              preference: "all",
+              display: "modal", 
             },
           }}
         >
