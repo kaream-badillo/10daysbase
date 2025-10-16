@@ -37,3 +37,157 @@
 .components a:hover {
   text-decoration: underline;
 }
+
+/* Wallet Info Styles */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.walletInfo, .messageSection, .greeterSection {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.walletInfo h2, .messageSection h3, .greeterSection h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Input and Button Styles */
+.greetingInput {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.updateButton, .signButton {
+  padding: 0.75rem 1.5rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.updateButton:hover:not(:disabled), .signButton:hover:not(:disabled) {
+  background: #0051cc;
+}
+
+.updateButton:disabled, .signButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Status Styles */
+.signatureSection, .transactionSection {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e8f5e8;
+  border-radius: 4px;
+  border: 1px solid #4caf50;
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ffebee;
+  border-radius: 4px;
+  border: 1px solid #f44336;
+  color: #d32f2f;
+}
+
+.txLink {
+  color: #0070f3;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.txLink:hover {
+  text-decoration: underline;
+}
+
+.greetingDisplay {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.currentGreeting {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* History Styles */
+.historySection {
+  margin-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 1rem;
+}
+
+.historySection h4 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.historyItem {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: background 0.2s;
+}
+
+.historyItem:hover {
+  background: #e8f5e8;
+}
+
+.historyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.historyMessage {
+  font-weight: 600;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.historyTime {
+  font-size: 0.9rem;
+  color: #666;
+  font-family: monospace;
+}
+
+.historyItem .txLink {
+  font-size: 0.9rem;
+  word-break: break-all;
+}
