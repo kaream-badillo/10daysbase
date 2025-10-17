@@ -1,0 +1,19 @@
+{
+  "name": "day3-part1-rewards",
+  "version": "1.0.0",
+  "description": "Day 3 Part 1 - Rewards Contract with Smart Wallets",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy-local": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "keywords": ["smart-wallets", "paymasters", "base", "rewards"],
+  "author": "10 Days of Base",
+  "license": "MIT"
+}
