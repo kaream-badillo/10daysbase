@@ -45,7 +45,6 @@ npm run deploy-local
 
 **Contract Address**: `0x2E8BcF5e5f9e2B882CC64241e3549878c1977FCd`
 **Network**: Base Sepolia (Chain ID: 84532)
-**BaseScan**: https://sepolia.basescan.org/address/0x2E8BcF5e5f9e2B882CC64241e3549878c1977FCd
 **Deployed At**: 2025-10-17T11:23:00.631Z
 **Initial Reward**: 0.01 ETH
 **Status**: Ready for gasless transactions
