@@ -35,10 +35,155 @@
 
 .card {
   padding: 2em;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  margin: 2rem 0;
 }
 
 .read-the-docs {
   color: #888;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.connect-btn, .claim-btn {
+  background: linear-gradient(45deg, #00d4aa, #00b4d8);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.connect-btn:hover, .claim-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 170, 0.3);
+}
+
+.claim-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.wallet-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.address {
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 4px;
+  word-break: break-all;
+  margin: 0.5rem 0;
+}
+
+.success {
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid #00ff00;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #00ff00;
+}
+
+.transaction-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.tx-link {
+  color: #00d4aa;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.tx-link:hover {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+.previous-claim {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.deposit-section, .claim-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.deposit-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.amount-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.amount-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.eth-label {
+  font-weight: bold;
+  color: #00d4aa;
+}
+
+.deposit-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.deposit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.deposit-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .info {
@@ -49,7 +194,7 @@
   border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
-.info ul {
+.info ol {
   text-align: left;
   display: inline-block;
 }
@@ -57,6 +202,7 @@
 .info li {
   margin: 0.5rem 0;
   color: #646cff;
+  font-weight: 500;
 }
 
 h1 {

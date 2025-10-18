@@ -12,6 +12,7 @@
   "dependencies": {
     "@base-org/account": "^2.4.0",
     "@coinbase/wallet-sdk": "^4.3.7",
+    "ethers": "^6.13.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "viem": "^2.38.3"
